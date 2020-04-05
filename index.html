@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Blogin.</title>
+</head>
+
+<body>
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Join us to get access to the latest stories!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="screen flex justify-center" onclick="toggleMenu()">
+
+        <ul class="side-nav flex clean-list align-right column ">
+            <li class="active" onclick="toggleMenu()"><a href="#">Journal</a>
+                <!-- <ul class="jurnal-list">
+                    <li> October 2016</li>
+                    <li>January 2017</li>
+                    <li>April 2017</li>
+                    <li>July 2017</li>
+                </ul> -->
+            </li>
+            <li onclick="toggleMenu()"><a href="#">About</a></li>
+            <li onclick="toggleMenu()"><a href="#">Work</a></li>
+            <li onclick="toggleMenu()"><a href="#">Contact</a></li>
+        </ul>
+
+    </section>
+
+    <header class="main-header ">
+        <div class="middle-box flex justify-center container space-between align-center ">
+
+            <div class="logo">Blogin</div>
+
+            <ul class="main-nav flex clean-list space-around align-center ">
+                <li class="active"><a href="#">Journal</a>
+                    <!-- <ul class="jurnal-list">
+                        <li> October 2016</li>
+                        <li>January 2017</li>
+                        <li>April 2017</li>
+                        <li>July 2017</li>
+                    </ul> -->
+                </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        </div>
+    </header>
+
+
+    <main class="main-content container">
+
+        <section class="post flex align-left wrap">
+            <img src="img/001.png" alt="">
+            <div class="post-content flex column space-between align-left">
+                <h2>Lorem, ipsum dolor sit amet consectetur adipisicing.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptates ipsam cum consequatur
+                    eveniet nostrum dolorem, rem porro quos corporis atque.</p>
+                <p>velit minus facere vel dolore amet corrupti obcaecati delectus commodi dolores ut minima placeat!
+                    Rem, iure cupiditate? Sequi, blanditiis.</p>
+                <button data-toggle="modal" data-target="#exampleModalCenter"
+                    class="flex align-center justify-center">continue reading<span>
+                        ➜</span></button>
+            </div>
+        </section>
+
+        <section class="post flex align-left  wrap">
+            <img src="img/002.png" alt="">
+            <div class="post-content flex column space-between align-left">
+                <h2>Lorem, ipsum dolor sit amet consectetur adipisicing.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptates ipsam cum consequatur
+                    eveniet nostrum dolorem, rem porro quos corporis atque.</p>
+                <p>velit minus facere vel dolore amet corrupti obcaecati delectus commodi dolores ut minima placeat!
+                    Rem, iure cupiditate? Sequi, blanditiis.</p>
+                <button data-toggle="modal" data-target="#exampleModalCenter"
+                    class="flex align-center justify-center">continue reading<span>
+                        ➜</span></button>
+            </div>
+        </section>
+
+        <section class="post flex align-left  wrap">
+            <img src="img/003.png" alt="">
+            <div class="post-content flex column space-between align-left">
+                <h2>Lorem, ipsum dolor sit amet consectetur adipisicing.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptates ipsam cum consequatur
+                    eveniet nostrum dolorem, rem porro quos corporis atque.</p>
+                <p>velit minus facere vel dolore amet corrupti obcaecati delectus commodi dolores ut minima placeat!
+                    Rem, iure cupiditate? Sequi, blanditiis.</p>
+                <button data-toggle="modal" data-target="#exampleModalCenter"
+                    class="flex align-center justify-center">continue reading<span>
+                        ➜</span></button>
+            </div>
+        </section>
+
+
+    </main>
+
+    <section class="content-footer container flex space-between justify-center">
+        <button class="prev-btn">previos</button>
+        <button class="next-btn">next</button>
+    </section>
+
+    <footer class="flex column align-center">
+
+        <h2 class="logo">Blogin</h2>
+        <h3>© 2014 Blogin.com - All Rights Reserved - Find more free Templates at <span>Pixelhint.com</span></h4>
+
+            <section class="flex social">
+                <a href="#"><img src="img/F.png"></a>
+                <a href="#"><img src="img/T.png"></a>
+                <a href="#"><img src="img/B.png"></a>
+                <a href="#"><img src="img/D.png"></a>
+            </section>
+
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.body.classList.toggle('menu-open')
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
