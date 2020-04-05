@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Blogin.</title>
+</head>
+
+<body>
+
+
+    <section class="screen flex justify-center" onclick="toggleMenu()">
+
+        <ul class="side-nav flex clean-list align-right column ">
+            <li class="active" onclick="toggleMenu()"><a href="#">Journal</a>
+                <!-- <ul class="jurnal-list">
+                    <li> October 2016</li>
+                    <li>January 2017</li>
+                    <li>April 2017</li>
+                    <li>July 2017</li>
+                </ul> -->
+            </li>
+            <li onclick="toggleMenu()"><a href="#">About</a></li>
+            <li onclick="toggleMenu()"><a href="#">Work</a></li>
+            <li onclick="toggleMenu()"><a href="#">Contact</a></li>
+        </ul>
+        
+    </section>
+
+    <header class="main-header ">
+        <div class="middle-box flex justify-center container space-between align-center ">
+
+            <div class="logo">Blogin</div>
+
+            <ul class="main-nav flex clean-list space-around align-center ">
+                <li class="active"><a href="#">Journal</a>
+                    <!-- <ul class="jurnal-list">
+                        <li> October 2016</li>
+                        <li>January 2017</li>
+                        <li>April 2017</li>
+                        <li>July 2017</li>
+                    </ul> -->
+                </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        </div>
+    </header>
+
+
+    <main class="main-content container">
+
+        <section class="post flex align-left wrap">
+            <img src="img/001.png" alt="">
+            <div class="post-content flex column space-between align-left">
+                <h2>Lorem, ipsum dolor sit amet consectetur adipisicing.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptates ipsam cum consequatur
+                    eveniet nostrum dolorem, rem porro quos corporis atque.</p>
+                <p>velit minus facere vel dolore amet corrupti obcaecati delectus commodi dolores ut minima placeat!
+                    Rem, iure cupiditate? Sequi, blanditiis.</p>
+                <button class="flex align-center justify-center">continue reading<span> ➜</span></button>
+            </div>
+        </section>
+
+        <section class="post flex align-left  wrap">
+            <img src="img/002.png" alt="">
+            <div class="post-content flex column space-between align-left">
+                <h2>Lorem, ipsum dolor sit amet consectetur adipisicing.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptates ipsam cum consequatur
+                    eveniet nostrum dolorem, rem porro quos corporis atque.</p>
+                <p>velit minus facere vel dolore amet corrupti obcaecati delectus commodi dolores ut minima placeat!
+                    Rem, iure cupiditate? Sequi, blanditiis.</p>
+                <button class="flex align-center justify-center">continue reading<span> ➜</span></button>
+            </div>
+        </section>
+
+        <section class="post flex align-left  wrap">
+            <img src="img/003.png" alt="">
+            <div class="post-content flex column space-between align-left">
+                <h2>Lorem, ipsum dolor sit amet consectetur adipisicing.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptates ipsam cum consequatur
+                    eveniet nostrum dolorem, rem porro quos corporis atque.</p>
+                <p>velit minus facere vel dolore amet corrupti obcaecati delectus commodi dolores ut minima placeat!
+                    Rem, iure cupiditate? Sequi, blanditiis.</p>
+                <button class="flex align-center justify-center">continue reading<span> ➜</span></button>
+            </div>
+        </section>
+
+
+    </main>
+
+    <section class="content-footer container flex space-between justify-center">
+        <button class="prev-btn">previos</button>
+        <button class="next-btn">next</button>
+    </section>
+
+    <footer class="flex column align-center">
+
+        <h2 class="logo">Blogin</h2>
+        <h3>2014 Blogin.com - All Rights Reserved - find more free templates at <span>Pixelhint</span></h4>
+
+            <section class="flex social">
+                <img src="img/F.png">
+                <img src="img/T.png">
+                <img src="img/B.png">
+                <img src="img/D.png">
+            </section>
+
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.body.classList.toggle('menu-open')
+        }
+    </script>
+</body>
+
+</html>
